@@ -41,6 +41,9 @@ class ViewController: UIViewController {
         myLabel.text = "\(Int(sender.value))"
     }
     
+    @IBAction func valueChanged(_ sender: UIPageControl) {
+        print(sender.currentPage)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
